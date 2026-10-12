@@ -1,0 +1,13 @@
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local environment
+.env
+
+# Never commit real cluster exports or logs
+*.log
+ceph-status*.txt
+pvecm-status*.txt
