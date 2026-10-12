@@ -1,5 +1,7 @@
 # proxmox-ceph-operations — Proxmox VE & Ceph Operations Runbooks and Scripts
 
+[![Validate scripts](https://github.com/ZQM-Computing/proxmox-ceph-operations/actions/workflows/validate.yml/badge.svg)](https://github.com/ZQM-Computing/proxmox-ceph-operations/actions/workflows/validate.yml)
+
 Field-tested **Proxmox VE** and **Ceph** operations material: cluster **health-check** routines and scripts, **backup and restore discipline**, **cloud-init VM templates**, **OSD replacement** procedure, and **upgrade checklists** — the runbooks that keep a hyperconverged cluster boring, written from operating one in production for large geospatial workloads.
 
 No theory-first filler: every procedure states its order of operations, the checks that gate each step, and the failure it exists to prevent.
