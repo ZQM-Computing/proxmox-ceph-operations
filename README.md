@@ -57,6 +57,14 @@ Corrections from your own cluster scars are the most valuable contributions here
 
 Maintained by [ZQM Computing](https://github.com/ZQM-Computing). Distilled from production Proxmox VE / Ceph operations — including running the platform behind a multi-terabyte spatial data practice — by Alex Zelenski, GISP.
 
+## More from this series
+
+- [postgis-patterns](https://github.com/ZQM-Computing/postgis-patterns) — Production PostGIS patterns: spatial indexing, joins & KNN, SRID management, vector tiles, data quality, partitioning
+- [duckdb-spatial-patterns](https://github.com/ZQM-Computing/duckdb-spatial-patterns) — DuckDB Spatial patterns for analytical geospatial SQL: GeoParquet, spatial joins, KNN, H3 aggregation — no server required
+- [qgis-resources](https://github.com/ZQM-Computing/qgis-resources) — QGIS expressions, PyQGIS snippets, Processing scripts, styles, and QField field-collection guides
+- [geospatial-api-reference](https://github.com/ZQM-Computing/geospatial-api-reference) — OGC API – Features reference implementation with FastAPI and PostGIS backends
+- [ollama-fleet-patterns](https://github.com/ZQM-Computing/ollama-fleet-patterns) — Ollama fleet operations: model management, health checks, load-spreading, VRAM budgeting, dependency-light RAG
+
 ## License
 
 MIT — see [`LICENSE`](LICENSE).
