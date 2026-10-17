@@ -1,18 +1,31 @@
-# Security policy
+# Security Policy
 
-## Supported version
+Report vulnerabilities to zqmcomputing@gmail.com.
 
-Security fixes are applied to the `main` branch. This repository contains documentation and read-only scripts; it is not a hosted service.
+## Scope
 
-## Reporting a problem
+- All ZQM Computing public repositories
+- ZQM Labs infrastructure and tooling
 
-Email **zqmcomputing@gmail.com** with the subject `proxmox-ceph-operations security` if you find:
+## Reporting
 
-- a script here that **modifies** cluster state despite being documented as read-only (treat that as a security-relevant bug), or
-- a procedure whose steps, followed as written, could cause data loss beyond what the runbook warns about.
+- **Email**: zqmcomputing@gmail.com
+- **GitHub Security Advisory**: Use the "Security" tab on GitHub
+- Please do NOT open public issues for security vulnerabilities
 
-Please do not open a public issue for a sensitive report. Include the affected file, the impact you observed, and reproduction steps when available.
+## What to Expect
 
-## Sharing rule
+- Acknowledgment within 48 hours
+- Assessment and severity classification within 5 business days
+- Coordinated disclosure timeline agreed upon with reporter
 
-Never paste real cluster output — hostnames, IPs, cluster names, storage layouts — into issues or pull requests for this repository. Scrub first; the patterns matter, your topology details are yours.
+## Supported Versions
+
+| Version | Supported |
+|---------|-----------|
+| latest  | Yes        |
+| < latest| No         |
+
+---
+
+*Part of the [ZQM Computing](https://github.com/ZQM-Computing) ecosystem.*
