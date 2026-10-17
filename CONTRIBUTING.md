@@ -1,11 +1,34 @@
-# Contributing
+# Contributing to ZQM Computing
 
-The most valuable contributions are corrections earned the hard way: a step that's out of order on your Ceph version, a Proxmox behavior that changed in a point release, a failure mode this repo hasn't met yet.
+Thank you for your interest in contributing to ZQM Computing — geospatial patterns and tools.
 
-## Ground rules
+## How to Contribute
 
-1. **Scripts stay read-only.** Anything that mutates a cluster belongs in a runbook as explicit, gated steps — not in automation a reader might run casually.
-2. **State your versions.** Proxmox and Ceph behaviors differ across releases; every procedural claim should carry the version context it was verified on.
-3. **No real infrastructure details.** Hostnames, IPs, cluster names, and layouts in examples stay generic. Never paste production `ceph status` output without scrubbing identifiers.
-4. **Order and gates over brevity.** If a procedure is safe because of its sequence, the sequence is the content — don't compress it away.
-5. Scripts must pass `shellcheck` and `bash -n` (CI enforces both).
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m 'Add your feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
+
+## Code Standards
+
+- Follow existing code style
+- Add tests for new features
+- Update documentation as needed
+- Keep commits atomic and descriptive
+- All repos are MIT-licensed unless otherwise noted
+
+## Reporting Issues
+
+- Use GitHub Issues for bug reports
+- Include steps to reproduce
+- Specify your environment (OS, version, etc)
+- For security vulnerabilities, see [SECURITY.md](SECURITY.md)
+
+## Questions?
+
+Open an issue or discussion in the repository.
+
+---
+
+*Part of the [ZQM Computing](https://github.com/ZQM-Computing) ecosystem — geospatial patterns and tools.*
