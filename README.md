@@ -84,6 +84,14 @@ Maintained by [ZQM Computing](https://github.com/ZQM-Computing). Distilled from 
 - [ollama-fleet-patterns](https://github.com/ZQM-Computing/ollama-fleet-patterns) — Ollama fleet operations: model management, health checks, load-spreading, VRAM budgeting, dependency-light RAG
 - [geospatial-patterns](https://github.com/ZQM-Computing/geospatial-patterns) — Umbrella index for all ZQM geospatial pattern repos
 
+## Installation
+
+```bash
+pip install -e .
+```
+
+Requires Python 3.11+.
+
 ## License
 
 MIT — see [`LICENSE`](LICENSE).
