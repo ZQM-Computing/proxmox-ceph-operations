@@ -5,11 +5,14 @@ The daily/weekly rhythm that keeps a Proxmox + Ceph cluster boring. Boring is th
 ## Daily (5 minutes, or automate it)
 
 1. **Ceph health is `HEALTH_OK`.** Anything else has a name and a detail page — read it the day it appears, not the week it cascades.
+
    ```bash
    ceph health
    ceph health detail        # when not HEALTH_OK
    ```
+
    Or run [`scripts/ceph_health_check.sh`](../scripts/ceph_health_check.sh), which exits nonzero on any non-OK state so cron/monitoring can alert on it.
+
 2. **Quorum is intact.** `pvecm status` shows the expected vote count and no partitioned nodes.
 3. **No stuck placement groups.** `ceph pg stat` — PGs should be `active+clean`. `active+undersized+degraded` that isn't shrinking means recovery is stalled; find out why today.
 4. **Backups ran.** Check last night's vzdump/PBS job results, and run [`scripts/backup_freshness.sh`](../scripts/backup_freshness.sh) weekly against the backup store — a job that "succeeds" into a full or unmounted target is the classic silent failure.
