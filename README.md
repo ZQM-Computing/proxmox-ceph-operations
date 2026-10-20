@@ -59,6 +59,13 @@ Homelabbers graduating to a second node and wondering what "operating Ceph" actu
 └── .github/    # CI: shellcheck + bash syntax on the scripts
 ```
 
+## Usage
+
+Use the runbooks in [`runbooks/`](runbooks/) for day-to-day Proxmox VE and
+Ceph operations — start with the cluster health runbook for routine
+checks, and follow the design principles above before applying any
+procedure to a live cluster.
+
 ## Contributing
 
 Corrections from your own cluster scars are the most valuable contributions here — especially version-specific behavior. See [`CONTRIBUTING.md`](CONTRIBUTING.md). Scripts must stay read-only and pass shellcheck.
