@@ -16,6 +16,16 @@ Field-tested **Proxmox VE** and **Ceph** operations material: cluster **health-c
 
 No theory-first filler: every procedure states its order of operations, the checks that gate each step, and the failure it exists to prevent.
 
+## Repository role and status
+
+**Status:** Active, public.
+
+**What this repository is:** Proxmox VE + Ceph operations material — cluster health-check routines, backup and restore discipline, cloud-init VM templates, OSD replacement procedure, and upgrade checklists, written from operating a hyperconverged cluster in production.
+
+**What it contributes:** Part of the ZQM Computing public geospatial portfolio — production-grade pattern and reference repositories that document geospatial engineering practice across the stack. This repository is the reusable pattern library for its layer: working code and runbooks that practitioners can lift into their own pipelines, and portfolio evidence of the engineering practice behind ZQM Computing. The umbrella index for the series is [geospatial-patterns](https://github.com/ZQM-Computing/geospatial-patterns).
+
+**Standing:** The portfolio program was completed and Tier-1 hardened on 2026-10-15, with prose CI enforced as required status checks. This repository is standalone — no other repository or deployment depends on it.
+
 ## What's inside
 
 **Runbooks** ([`runbooks/`](runbooks/))
