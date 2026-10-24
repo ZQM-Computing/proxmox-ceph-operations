@@ -1,0 +1,8 @@
+-- Pattern 08: Backup verification and restore drill cadence
+-- Quarterly: export a representative RBD snapshot, import to scratch pool,
+-- run fsck/DB integrity checks, then destroy scratch image.
+-- rbd export rbd-pool/vm-100-disk-0@backup-YYYYMMDD /tmp/drill.rbd
+-- rbd import /tmp/drill.rbd scratch/drill-vm-100
+-- (run integrity check inside guest)
+-- rbd rm scratch/drill-vm-100
+-- Alert if drill older than 90 days.
