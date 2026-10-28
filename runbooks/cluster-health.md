@@ -33,7 +33,7 @@ The daily/weekly rhythm that keeps a Proxmox + Ceph cluster boring. Boring is th
 ## Red states and first moves
 
 | Symptom | First move |
-|---|---|
+| --- | --- |
 | `HEALTH_WARN: 1 nearfull osd(s)` | Identify the pool (`ceph osd df`), delete stale snapshots, plan an OSD add — do not rebalance blindly during production hours |
 | PGs stuck `inactive` | Check for a down OSD/host in the CRUSH path (`ceph osd tree`) before touching anything else |
 | A node drops quorum repeatedly | Corosync network first (cable, switch, MTU on the cluster network) — it is almost never the software |

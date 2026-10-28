@@ -21,10 +21,10 @@ Report vulnerabilities to <zqmcomputing@gmail.com>.
 
 ## Supported Versions
 
-| Version | Supported |
-|---------|-----------|
-| latest  | Yes        |
-| < latest| No         |
+| Version  | Supported |
+|----------|-----------|
+| latest   | Yes       |
+| < latest | No        |
 
 ---
 

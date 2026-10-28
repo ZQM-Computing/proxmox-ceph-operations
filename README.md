@@ -34,7 +34,7 @@ No theory-first filler: every procedure states its order of operations, the chec
 **Runbooks** ([`runbooks/`](runbooks/))
 
 | Runbook | Covers |
-|---|---|
+| --- | --- |
 | [Cluster health](runbooks/cluster-health.md) | Daily/weekly/monthly checks, quorum, PG states, red-state first moves |
 | [Backup discipline](runbooks/backups.md) | PBS + archive tiers, verification, freshness monitoring, restore drills — and why Ceph replication is not a backup |
 | [OSD replacement](runbooks/osd-replacement.md) | Graceful drain vs. dead-disk path, backfill throttling, Proxmox `pveceph` notes |
@@ -44,7 +44,7 @@ No theory-first filler: every procedure states its order of operations, the chec
 **Scripts** ([`scripts/`](scripts/)) — all read-only; they report, they never mutate:
 
 | Script | What it does |
-|---|---|
+| --- | --- |
 | `ceph_health_check.sh` | Health summary + detail; exits nonzero unless `HEALTH_OK` (cron/monitoring friendly, `--json` mode) |
 | `pve_node_report.sh` | One-shot snapshot: quorum, nodes, guests, storage, load |
 | `backup_freshness.sh` | Newest vzdump archive per guest, flags anything older than your limit |
