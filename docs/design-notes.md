@@ -11,7 +11,7 @@ Hard-won layout guidance for hyperconverged clusters in the 3–8 node range —
 ## Pools by workload, not by org chart
 
 | Pool | Profile | Notes |
-|---|---|---|
+| --- | --- | --- |
 | VM disks (rbd) | Replicated 3×, SSD/NVMe if guests are latency-sensitive | The default pool; keep it boring |
 | Bulk / archive | Erasure-coded (e.g., k=4, m=2) once the cluster has 6+ hosts | EC is for capacity tiers; on 3 hosts it is a trap |
 | CephFS for shared files | Replicated, one active MDS + standby | Lovely for shared datasets; respect the client cache/attr behavior under many small files |
