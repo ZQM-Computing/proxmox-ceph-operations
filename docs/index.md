@@ -13,7 +13,7 @@ No theory-first filler: every procedure states its order of operations, the chec
 The runbooks live in `runbooks/` at the repository root:
 
 | Runbook | Covers |
-|---|---|
+| --- | --- |
 | [Cluster health](https://github.com/ZQM-Computing/proxmox-ceph-operations/blob/main/runbooks/cluster-health.md) | Daily/weekly/monthly checks, quorum, PG states, red-state first moves |
 | [Backup discipline](https://github.com/ZQM-Computing/proxmox-ceph-operations/blob/main/runbooks/backups.md) | PBS + archive tiers, verification, freshness monitoring, restore drills — and why Ceph replication is not a backup |
 | [OSD replacement](https://github.com/ZQM-Computing/proxmox-ceph-operations/blob/main/runbooks/osd-replacement.md) | Graceful drain vs. dead-disk path, backfill throttling, Proxmox `pveceph` notes |
