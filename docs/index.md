@@ -1,6 +1,6 @@
 # Proxmox VE & Ceph Operations
 
-Field-tested Proxmox VE and Ceph operations material: cluster health-check routines and scripts, backup and restore discipline, cloud-init VM templates, OSD replacement procedure, and upgrade checklists — the runbooks that keep a hyperconverged cluster boring, written from operating one in production for large geospatial workloads.
+Proxmox VE and Ceph operations reference material covering cluster health checks, backup and restore procedures, cloud-init VM templates, OSD replacement, and upgrade checklists. Validate commands against the installed software versions and a disposable test environment before applying them to live clusters.
 
 No theory-first filler: every procedure states its order of operations, the checks that gate each step, and the failure it exists to prevent.
 
@@ -22,7 +22,7 @@ The runbooks live in `runbooks/` at the repository root:
 
 ## Scripts
 
-All read-only; they report, they never mutate. See [`scripts/`](https://github.com/ZQM-Computing/proxmox-ceph-operations/tree/main/scripts): `ceph_health_check.sh`, `pve_node_report.sh`, `backup_freshness.sh`, plus `check_docs.py`.
+The included shell scripts are intended for read-only reporting; inspect each command and validate it in your own environment before use. See [`scripts/`](https://github.com/ZQM-Computing/proxmox-ceph-operations/tree/main/scripts): `ceph_health_check.sh`, `pve_node_report.sh`, `backup_freshness.sh`, plus `check_docs.py`.
 
 ## Examples and patterns
 
